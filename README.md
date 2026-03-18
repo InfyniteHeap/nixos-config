@@ -1,2 +1,3 @@
-# nixos-config
-My NixOS configuration.
+# InfyniteHeap's NixOS Configuration
+
+This is my personal NixOS configuration.
