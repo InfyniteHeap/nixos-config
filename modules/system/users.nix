@@ -10,6 +10,9 @@
     ];
   };
 
+  # Enable Nix experimental features
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
   # Set default shell to fish
   programs.fish.enable = true;
   users.users.infyniteheap.shell = pkgs.fish;
