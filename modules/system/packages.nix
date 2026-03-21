@@ -8,6 +8,7 @@
     # File Management
     yazi # terminal file manager
     eza # modern ls replacement with icons and git support
+    wget # command-line file downloader
     rsync # fast incremental file transfer and sync
     p7zip # 7z archiver and compressor
 
