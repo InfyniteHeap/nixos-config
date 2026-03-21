@@ -18,7 +18,6 @@
 
     # Shell Enhancements
     zoxide # smart cd command that learns your habits
-    watchexec # run commands on file changes
     fastfetch # fast system information display tool
 
     # System Monitoring
