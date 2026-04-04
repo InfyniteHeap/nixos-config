@@ -3,7 +3,6 @@
     # Git & Version Control
     git # distributed version control system
     lazygit # terminal UI for git
-    delta # syntax-highlighting pager for git diffs
 
     # File Management
     yazi # terminal file manager
