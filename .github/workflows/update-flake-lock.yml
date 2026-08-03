@@ -1,28 +1,27 @@
 name: Update flake.lock
 
-# Controls when the workflow will run
 on:
   schedule:
-    # Update theme automatically everyday at 00:00 UTC
     - cron: "0 0 * * *"
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
-  update-theme:
+  update-flake-lock:
     runs-on: ubuntu-latest
 
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
       contents: write
-      pull-requests: write
 
     steps:
       - uses: actions/checkout@v7
 
       - uses: DeterminateSystems/determinate-nix-action@v3
 
-      - uses: DeterminateSystems/update-flake-lock@main
-        with:
-          pr-title: "chore: Update `flake.lock`"
+      - name: Update flake.lock
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          nix flake update --commit-lock-file
+
+      - name: Push
+        run: git push
