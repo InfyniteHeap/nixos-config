@@ -4,6 +4,9 @@
     git # distributed version control system
     lazygit # terminal UI for git
 
+    # Editors
+    helix # modern terminal editor
+
     # File Management
     yazi # terminal file manager
     eza # modern ls replacement with icons and git support

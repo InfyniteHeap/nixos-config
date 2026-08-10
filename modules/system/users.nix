@@ -23,9 +23,9 @@
   # Enable starship
   programs.starship.enable = true;
 
-  # Set default editor to neovim
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
+  # Set default editor to helix
+  environment.variables = {
+    EDITOR = "hx";
+    VISUAL = "hx";
   };
 }
