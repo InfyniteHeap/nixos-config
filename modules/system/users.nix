@@ -23,6 +23,12 @@
   # Enable starship
   programs.starship.enable = true;
 
+  # Install zoxide and wire its fish integration
+  programs.zoxide.enable = true;
+
+  # Install fzf and wire its fish keybindings
+  programs.fzf.keybindings = true;
+
   # Set default editor to helix
   environment.variables = {
     EDITOR = "hx";
